@@ -365,6 +365,13 @@ public class PinEntryView extends ViewGroup {
         return mask;
     }
 
+    public void setDigits(int numOfDigits){
+        this.digits = numOfDigits;
+        removeView(editText);
+        addViews();
+
+    }
+
     public boolean getAccentRequiresFocus() {
         return accentRequiresFocus;
     }

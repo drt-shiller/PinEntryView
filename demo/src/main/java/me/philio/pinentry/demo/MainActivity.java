@@ -15,6 +15,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         pinEntryView = (PinEntryView) findViewById(R.id.pin_entry_simple);
+        pinEntryView.setDigits(5);
         pinEntryView.setOnPinEnteredListener(new PinEntryView.OnPinEnteredListener() {
             @Override
             public void onPinEntered(String pin) {

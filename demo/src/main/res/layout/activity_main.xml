@@ -13,6 +13,7 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
+
         tools:context=".MainActivity">
 
         <me.philio.pinentry.PinEntryView
@@ -21,8 +22,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             app:accentType="all"
+            app:digitSpacing="8dp"
             app:digitBackground="@android:color/white"
-            app:digitElevation="10dp" />
+            />
 
         <me.philio.pinentry.PinEntryView
             android:id="@+id/pin_entry_border"
