@@ -367,7 +367,7 @@ public class PinEntryView extends ViewGroup {
 
     public void setDigits(int numOfDigits){
         this.digits = numOfDigits;
-        removeView(editText);
+        removeAllViews();
         addViews();
 
     }
